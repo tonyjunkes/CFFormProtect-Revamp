@@ -1003,7 +1003,7 @@ if (cffp.testSubmission(form)) {
 
 There's no true direction with this conversion except to bring some of theto speed a bit and possibly make some of the functionality simpler.
 
-There are some minor changes that will be documented as time allows. For the most part, general code based on the original version of CFFormProtect should be compatible.
+There are some minor changes that will be documented as time allows. For the most part, general code based on the original version of CFFormProtect is more or less compatible. In this variation though, `cffp.ini.cfm` is now `config.json`.
 
 ## Contributors:
 
