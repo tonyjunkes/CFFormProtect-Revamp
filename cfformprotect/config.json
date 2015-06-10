@@ -1,0 +1,51 @@
+{
+	"mouseMovement": 1,
+	"usedKeyboard": 1,
+	"timedFormSubmission": 1,
+	"hiddenFormField": 1,
+	"akismet": 0,
+	"linkSleeve": 1,
+	"tooManyUrls": 1,
+	"teststrings": 1,
+	"projectHoneyPot": 0,
+
+	"timedFormMinSeconds": 5,
+	"timedFormMaxSeconds": 3600,
+	"encryptionKey": "JacobMuns0n",
+	"akismetAPIKey": "",
+	"akismetBlogURL": "",
+	"akismetFormNameField": "",
+	"akismetFormEmailField": "",
+	"akismetFormURLField": "",
+	"akismetFormBodyField": "",
+	"tooManyUrlsMaxUrls": 6,
+	"spamstrings": [
+		"thislinedoesntgetread", "sexy singles", "milfs", "sexy mistress", "free music", "viagra",
+		"phentermine", "viagra", "tramadol", "ultram", "prescription soma", "cheap soma", "cialis",
+		"levitra", "local singles", "shemales", "payday loan lenders", "orthislinewtf"
+	],
+	"projectHoneyPotAPIKey": "",
+
+	"mouseMovementPoints": 1,
+	"usedKeyboardPoints": 1,
+	"timedFormPoints": 2,
+	"hiddenFieldPoints": 3,
+	"akismetPoints": 3,
+	"linkSleevePoints": 3,
+	"tooManyUrlsPoints": 3,
+	"spamStringPoints": 3,
+	"projectHoneyPotPoints": 3,
+
+	"failureLimit": 3,
+
+	"emailFailedTests": 0,
+	"emailServer": "",
+	"emailUserName": "",
+	"emailPassword": "",
+	"emailFromAddress": "",
+	"emailToAddress": "",
+	"emailSubject": "",
+
+	"logFailedTests": 1,
+	"logFile": "CFFormProtect"
+}
