@@ -1001,7 +1001,7 @@ if (cffp.testSubmission(form)) {
 
 ## TODOs / Notes:
 
-There's no true direction with this conversion except to bring some of theto speed a bit and possibly make some of the functionality simpler.
+There's no true direction with this conversion except to bring some of the code up to speed in script a bit and possibly make some of the functionality simpler.
 
 There are some minor changes that will be documented as time allows. For the most part, general code based on the original version of CFFormProtect is more or less compatible. In this variation though, `cffp.ini.cfm` is now `config.json`.
 
@@ -1009,4 +1009,4 @@ There are some minor changes that will be documented as time allows. For the mos
 
 > CFFormProtect was created by Jake Munson with the CFC implementation by Dave Shuck. Other contributors include Mary Jo Sminkey, Ben Elliott & Bas van der Graaf. For more info & details on the original project, see: http://cfformprotect.riaforge.org/. A PHP port of CFFormProtect was created by Dan McCarthy which can be found here: https://github.com/mccarthy/phpFormProtect.
 
-###### Conversion to CFScript and various other modifications found in this repo by Tony Junkes (@cfchef).
+> Conversion to CFScript and various other modifications found in this repo by Tony Junkes (@cfchef).
