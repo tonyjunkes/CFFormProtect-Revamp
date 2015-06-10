@@ -1007,6 +1007,8 @@ There are some minor changes that will be documented as time allows. For the mos
 
 ## Contributors:
 
-> CFFormProtect was created by Jake Munson with the CFC implementation by Dave Shuck. Other contributors include Mary Jo Sminkey, Ben Elliott & Bas van der Graaf. For more info & details on the original project, see: http://cfformprotect.riaforge.org/. A PHP port of CFFormProtect was created by Dan McCarthy which can be found here: https://github.com/mccarthy/phpFormProtect.
+> CFFormProtect was created by Jake Munson with the CFC implementation by Dave Shuck. Other contributors include Mary Jo Sminkey, Ben Elliott & Bas van der Graaf. All credit for this project goes to these individuals and anyone else I may not have been aware of.
+
+> For more info & details on the original project, see: http://cfformprotect.riaforge.org/. A PHP port of CFFormProtect was created by Dan McCarthy which can be found here: https://github.com/mccarthy/phpFormProtect.
 
 > Conversion to CFScript and various other modifications found in this repo by Tony Junkes (@cfchef).
