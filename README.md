@@ -34,15 +34,15 @@ The beauty of CFFormProtect is that any of the above tests can fail, and the spa
 2. On your form page, add this line of code: `<cfset cffp = createObject("component", "cfformprotect.CFFPVerify").init()>`.
 3. Put `<cfinclude template="/cfformprotect/cffp.cfm">` somewhere between your form tags. You could also include this instead: `<cfoutput>#cffp.renderCFFP()#</cfoutput>`
 4. In your processing page include the following code:
-```
-cffp = createObject("component", "cfformprotect.CFFPVerify").init();
-// Now we can test the form submission.
-if (cffp.testSubmission(form)) {
-    // The submission has passed the form test. Place processing here.
-} else {
-    // The test failed. Take appropriate failure action here.
-}
-```
+	```
+	cffp = createObject("component", "cfformprotect.CFFPVerify").init();
+	// Now we can test the form submission.
+	if (cffp.testSubmission(form)) {
+    		// The submission has passed the form test. Place processing here.
+	} else {
+    		// The test failed. Take appropriate failure action here.
+	}
+	```
 5. Setup your email settings and Akismet in `config.json`, if you want to use those features (if you leave the email settings blank, you won't receive an email when spammer tries to attack your forms).
 
 ## Customization:
