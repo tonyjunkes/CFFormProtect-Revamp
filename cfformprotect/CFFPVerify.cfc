@@ -1,7 +1,7 @@
 component displayname="CF Form Protect Verify"
 	output="false"
 {
-	public cffpVerify function init(string configPath = expandPath("/cfformprotect"), string configFile = "config.json") {
+	public CFFPVerify function init(string configPath = expandPath("/cfformprotect"), string configFile = "config.json") {
 		setConfig(arguments.configPath, arguments.configFile);
 		this.configPath = arguments.configPath;
 		this.configFile = arguments.configFile;
@@ -25,7 +25,7 @@ component displayname="CF Form Protect Verify"
 		var testResults = {};
 
 		// Test for mouse movement
-		try	{
+		try {
 			if (getConfig().mouseMovement) {
 				testResults.MouseMovement = testMouseMovement(arguments.fields);
 				if (!testResults.MouseMovement) {
@@ -37,7 +37,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test for used keyboard
-		try	{
+		try {
 			if (getConfig().usedKeyboard) {
 				testResults.usedKeyboard = testUsedKeyboard(arguments.fields);
 				if (!testResults.usedKeyboard) {
@@ -49,7 +49,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test for time taken on the fields
-		try	{
+		try {
 			if (getConfig().timedFormSubmission) {
 				testResults.timedFormSubmission = testTimedFormSubmission(arguments.fields);
 				if (!testResults.timedFormSubmission.pass) {
@@ -61,7 +61,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test for empty hidden fields field
-		try	{
+		try {
 			if (getConfig().hiddenFormField) {
 				testResults.hiddenFormField = testHiddenFormField(arguments.fields);
 				if (!testResults.hiddenFormField) {
@@ -73,7 +73,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test Akismet
-		try	{
+		try {
 			if (getConfig().akismet) {
 				testResults.akismet = testAkismet(arguments.fields);
 				if (!testResults.akismet.pass) {
@@ -85,7 +85,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test LinkSleeve
-		try	{
+		try {
 			if (getConfig().linkSleeve) {
 				testResults.linkSleeve = testLinkSleeve(arguments.fields);
 				if (!testResults.linkSleeve.pass) {
@@ -97,7 +97,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test tooManyUrls
-		try	{
+		try {
 			if (getConfig().tooManyUrls) {
 				testResults.tooManyUrls = testTooManyUrls(arguments.fields);
 				if (!testResults.tooManyUrls) {
@@ -121,7 +121,7 @@ component displayname="CF Form Protect Verify"
 		catch(any e) { /* an error occurred on this test, but we will move one */ }
 
 		// Test Project Honey Pot
-		try	{
+		try {
 			if (getConfig().projectHoneyPot) {
 				testResults.ProjHoneyPot = testProjHoneyPot(arguments.fields);
 				if (!testResults.ProjHoneyPot) {
