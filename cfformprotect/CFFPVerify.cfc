@@ -336,9 +336,13 @@ component displayname="CF Form Protect Verify"
 	public boolean function testSpamStrings(required struct fields) {
 		// Loop through the array of spam strings to see if they are found in the fields submission
 		for (var field in arguments.fields) {
-			if (isSimpleValue(arguments.fields[field]) && arrayFindNoCase(getConfig().spamstrings, arguments.fields[field])) {
-				return false;
-			}
+			if (isSimpleValue(arguments.fields[field])) {
+				for (var spamString in getConfig().spamstrings) {
+					if (findNoCase(spamString, arguments.fields[field])) {
+						return false;
+					}
+				}
+			}			
 		}
 
 		return true;
