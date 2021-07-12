@@ -1,3 +1,5 @@
+> Note: This project has been archived. I haven't used it in ages and have no intention to continue maintaining it at this time. Feel free to fork it the repo to pick up where I left off.
+
 CFFormProtect :: Revamp
 =======================
 ##### A modern conversion of the original CFFormProtect into full CFScript & then some. . .
@@ -1011,4 +1013,4 @@ There are some minor changes that will be documented as time allows. For the mos
 
 > For more info & details on the original project, see: http://cfformprotect.riaforge.org/. A PHP port of CFFormProtect was created by Dan McCarthy which can be found here: https://github.com/mccarthy/phpFormProtect.
 
-> Conversion to CFScript and various other modifications found in this repo by Tony Junkes (@cfchef).
+> Conversion to CFScript and various other modifications found in this repo by Tony Junkes (@tonyjunkes).
